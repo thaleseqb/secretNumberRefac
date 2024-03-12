@@ -15,6 +15,7 @@ function validationFunction(attempt) {
         document.body.innerHTML = `
         <h2>Parabens você acertou!<h2>
         <h3>O número era ${number}</h3>
+        <button id="play-again" class="btn-play">jogar novamente</button>
         `
     } else if (number < secretNumber) {
         attemptElement.innerHTML += '<div>O número secreto é maior <i class="fa-solid fa-arrow-up-long"></i></div>'
@@ -31,4 +32,10 @@ function ifInvalid(number) {
 function greaterOrLower(number) {
     return number > greaterValue || number < lowerValue
 
-} 
+}
+
+document.addEventListener('click', (event) => {
+    if (event.target.id == 'play-again') {
+        window.location.reload()
+    }
+})
