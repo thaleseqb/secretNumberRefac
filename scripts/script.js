@@ -28,7 +28,7 @@ function validationFunction(attempt) {
     } else if (number < secretNumber) {
         attemptElement.innerHTML += '<div>O número secreto é maior <i class="fa-solid fa-arrow-up-long"></i></div>'
     } else {
-        attemptElement.innerHTML += '<div>O número secreto é maior <i class="fa-solid fa-arrow-down-long"></i></div>'
+        attemptElement.innerHTML += '<div>O número secreto é menor <i class="fa-solid fa-arrow-down-long"></i></div>'
     }
 
 }

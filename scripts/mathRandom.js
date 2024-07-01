@@ -11,5 +11,3 @@ domLower.innerHTML  = lowerValue
 
 const domGreater = document.getElementById('greater-value')
 domGreater.innerHTML  = greaterValue
-
-console.log(`O número secreto é ${secretNumber}`)
